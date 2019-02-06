@@ -4,20 +4,21 @@
 body {
 	margin: 0;
 	font-family: Arial;
-	background-color: #ffecca;
+	background-color: #dbdbdb;
 }
 header {
 	top: 0px;
 	position: fixed;
 	width: 100vw;
-	background-color: white;
+	background-image: linear-gradient(#6d6d74, #303030);
 }
 nav {
 	/* width: 100%;vw */
 	height: 55px;
 	margin: 15px 10%;
 }
-#logo {
+a#logo img {
+	border-radius: 10px;
 	margin: 0 45px 0 0;
 }
 nav ul {
@@ -36,26 +37,28 @@ nav ul li {
 	line-height: 40px;
 }
 nav a {
-	color: gray;
+	color: #dfdfdf;
 	font-weight: bold;
 	text-decoration: none;
+}
+nav a:hover {
+	color: white;
 }
 .menu {
 	margin: 0;
 }
-.menu-izquierda {
+/* .menu-izquierda {
 
-}
+} */
 .menu-derecha {
 	float: right;
 }
 
-section {
+section#main {
 	margin: 100px 10%;
 }
 h1 {
-	color:#3b57d6;
-	font-family: 'Times New Roman';
+	color:#303030;
 }
 p {
 	font-size: 18px;

@@ -1,0 +1,3 @@
+vh: es 'viewport height' o altura de la interfaz
+vm: es 'viewport width' o ancho de la interfaz
+%: el porcentaje con respecto al elemento o a su padre

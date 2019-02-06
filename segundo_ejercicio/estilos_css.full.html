@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>[FULL] Estilos CSS</title>
+	<!-- Aquí incluimos nuestros códigos css -->
+
+	<!-- Incluimos archivo .css -->
+	<link rel="stylesheet" type="text/css" href="css/estilos.full.css">
+
+	<!-- Escribimos código CSS delimitado por etiquetas de estilo -->
+	<style>
+		#texto-3 {
+			color: #aa8b00;
+			font-family: 'Times New Roman';
+			margin-left: 60px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<a id="logo" href="#">
+				<img src="imagen.jpg" alt="Nuestro logotipo" width="100">
+			</a>
+			<!-- Se usa una lista de elementos para el menú de la derecha -->
+			<ul class="menu menu-izquierda">
+				<li><a href="estilos_css.html">Primera página</a></li>
+				<li><a href="pagina.html">Otra página</a></li>
+				<li><a href="javascript/">JavaScript</a></li>
+			</ul>
+			<!-- Lo mismo para el menú de la izquierda -->
+			<ul class="menu menu-derecha">
+				<li><a href="C:/Users/beck/">Login</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<section id="main">
+		<main>
+			<h1>CSS: sintaxis y formas de agregar estilos</h1>
+			<p>El texto 1</p>
+			
+			<!-- Escribimos código CSS lineal dentro del atributo style -->
+			<p style="color:blue;margin-left:30px;">El texto 2</p>
+			
+			<p id="texto-3">El texto 3</p>
+		
+			<p id="texto-4">El texto 4</p>
+		
+			<p id="texto-5">El texto 5</p>
+		
+			<div class="contenedor-botones">
+				<button class="boton aceptar">Aceptar</button>
+				<button class="boton cancelar">Cancelar</button>
+			</div>
+		
+			<div class="contenedor-cajas">
+				<div class="caja">caja 1</div>
+				<div class="caja">caja 2</div>
+				<div class="caja azul">caja 3</div>
+				<div class="caja">caja 4</div>
+			</div>
+		</main>
+
+	</section>
+
+</body>
+</html>
