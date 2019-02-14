@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<!--
+		En este ejercicio aprenderás como
+		moldear el diseño de todos los
+		elementos, con CSS
+	-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>[FULL] Estilos CSS</title>
+	<!-- Aquí incluimos nuestros códigos css -->
+
+	<!-- Incluimos archivo .css -->
+	<link rel="stylesheet" type="text/css" href="css/estilos.full.css">
+
+	<!-- Escribimos código CSS delimitado por etiquetas de estilo -->
+	<style>
+		#texto-3 {
+			color: #aa8b00;
+			font-family: 'Times New Roman';
+			margin-left: 60px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<a id="logo" href="#">
+				<img src="imagen.jpg" alt="Nuestro logotipo" width="100">
+			</a>
+			<!-- Se usa una lista de elementos para el menú de la derecha -->
+			<ul class="menu menu-izquierda">
+				<li><a href="estilos.html" title="e">Ejercicio</a></li>
+				<li><a href="../primer_ejercicio/primer_ejercicio.full.html">Primer ejercicio FULL</a></li>
+			</ul>
+			<!-- Lo mismo para el menú de la izquierda -->
+			<ul class="menu menu-derecha">
+				<li><a href="#login">Login</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<aside>
+		<a href="#main">Sintaxis</a>
+		<a href="#contenido">Propiedades y valores de CSS</a>
+	</aside>
+
+	<section id="main">
+		<main>
+			<h1>CSS: sintaxis y formas de agregar estilos</h1>
+
+			<h3>Alineado a la izquierda (default)</h3>
+			<p align="left">
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem ducimus, id libero rerum totam explicabo inventore quaerat facere, dolores esse eligendi debitis veniam beatae pariatur maiores autem architecto accusantium eos!
+			</p>
+			<h3>Alineado al centro</h3>
+			<p align="centers">
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia doloremque porro natus dignissimos quo facere velit, non cupiditate a neque quas dolores perferendis ad recusandae? Fuga quaerat maxime ab eius!
+			</p>
+			<h3>Alineado a la derecha</h3>
+			<p align="right">
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi accusamus corrupti et reprehenderit, earum beatae deleniti doloribus deserunt quidem facilis aperiam esse ea? Quos dolorem sed nisi dolore fuga sit.
+			</p>
+		</main>
+	</section>
+
+	<section id="contenido">
+		
+		<h1>Colores, tamaños, márgenes, contenidos, etc...</h1>
+
+		<p>El texto 1</p>
+		
+		<!-- Escribimos código CSS lineal dentro del atributo style -->
+		<p style="color:blue;margin-left:30px;">El texto 2</p>
+		
+		<p id="texto-3">El texto 3</p>
+	
+		<p id="texto-4">El texto 4</p>
+	
+		<p id="texto-5">El texto 5</p>
+	
+		<div class="contenedor-botones">
+			<div class="left">
+				<button class="btn">Ayuda</button>
+			</div>
+			<div align="right">
+				<button class="btn cancelar">Cancelar</button>
+				<button class="btn aceptar">Aceptar</button>
+			</div>
+		</div>
+		<div class="contenedor-cajas">
+			<div class="caja">caja 1</div>
+			<div class="caja">caja 2</div>
+			<div class="caja azul">caja 3</div>
+			<div class="caja">caja 4</div>
+		</div>
+		
+	</section>
+
+</body>
+</html>

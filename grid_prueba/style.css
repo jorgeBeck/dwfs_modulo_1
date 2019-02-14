@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+}
+.main-container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 80px
+                        1fr
+                        150px;
+    grid-template-areas: "header 	header"
+                         ". 		content"
+                         "footer 	footer";
+}
+
+.header {
+    grid-area: header;
+    background: red;
+}
+.content {
+    grid-area: content;
+    background: blue;
+}
+.footer {
+    grid-area: footer;
+    background: brown;
+}

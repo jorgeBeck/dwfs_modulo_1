@@ -1,5 +1,5 @@
 :root {
-	--main-content-with: 10%;
+	--main-content-width: 150px;
 }
 body {
 	margin: 0;
@@ -10,12 +10,12 @@ header {
 	top: 0px;
 	position: fixed;
 	width: 100vw;
-	background-image: linear-gradient(#6d6d74, #303030);
+	/* background-image: linear-gradient(#6d6d74, #303030); */
 }
 nav {
 	/* width: 100%;vw */
 	height: 55px;
-	margin: 15px 10%;
+	margin: 15px var(--main-content-width);
 }
 a#logo img {
 	border-radius: 10px;
@@ -54,14 +54,18 @@ nav a:hover {
 	float: right;
 }
 
-section#main {
-	margin: 100px 10%;
+section {
+	margin: 50px var(--main-content-width);
+}
+#main {
+	margin-top: 110px;
 }
 h1 {
 	color:#303030;
+	/* font-size: 32px; */
 }
 p {
-	font-size: 18px;
+	/* font-size: 12px; */
 }
 /* Estilo para un p con id "texto-4" */
 p#texto-4 {
@@ -71,53 +75,50 @@ p#texto-4 {
 	margin-right: 80%;
 }
 .contenedor-botones {
-	margin: 25px 0;
-	padding: 25px;
-	border: 2px solid blueviolet;
+	/* border: 2px solid blueviolet; */
+	border: 3px solid #008080;
 	border-left: solid 5px #7e3434;
+	border-radius: 20px;
+	margin: 20px 0;
+	padding: 20px;
 }
-.boton {
+.btn {
 	border: none;
 	border-radius: 5px;
 	background-color: #333;
+	box-shadow: none; /** Truco para el botón */
 	padding: 10px 20px;
 	margin: auto 15px;
 	font-weight: bold;
 	color: white;
 	cursor: pointer;
+	transition: .2s;
+}
+/* Estilo para la clase "boton" cuando se pasa el mouse sobre el elemento */
+.btn:hover {
+	box-shadow:inset 0 0 0 99999px rgba(0,0,0,0.25);
+}
+.left {
+	position: absolute;
 }
 .aceptar {
-	transition: ease .4s;
-	background-color: #67dee7;
-	border-bottom: solid 4px #34797e;
-}
-/* Estilo para la clase "aceptar" cuando se pasa el mouse sobre el elemento */
-.aceptar:hover {
-	background-color: #4eb2b9;
+	background-color: #55e25c;
 }
 .cancelar {
-	transition: ease .4s;
 	background-color: #e76767;
-	border-bottom: solid 4px #7e3434;
-}
-/* Estilo para la clase "cancelar" cuando se pasa el mouse sobre el elemento */
-.cancelar:hover {
-	background-color: #b94e4e;
 }
 .contenedor-cajas {
 	padding: 10px;
 	border: solid 2px green;
-	border-radius: 25px;
-	/* width: 50%; */
+	border-radius: 8px 0 20px 50px;
 }
 .caja {
-	border-radius: 12.5px;
-	/* display: inline-block; */
+	border-radius: 19.5px;
 	border: solid 2px red;
-	margin: 2% 5%;
-	padding: 25px 11%;
+	display: inline-block;
+	margin: 12px;
+	padding: 10px 25px;
 }
-
 .azul {
 	background-color: #3399ff;
 }
