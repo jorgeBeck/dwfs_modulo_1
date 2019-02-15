@@ -6,11 +6,13 @@ body {
 	font-family: Arial;
 	background-color: #dbdbdb;
 }
+
+/** == INSTRUCCIONES PARA HEADER ESTÁTICO == */
 header {
 	top: 0px;
 	position: fixed;
 	width: 100vw;
-	/* background-image: linear-gradient(#6d6d74, #303030); */
+	background-image: linear-gradient(#6d6d74, #303030);
 }
 nav {
 	/* width: 100%;vw */
@@ -48,11 +50,11 @@ nav a:hover {
 	margin: 0;
 }
 /* .menu-izquierda {
-
 } */
 .menu-derecha {
 	float: right;
 }
+/** == INSTRUCCIONES PARA HEADER ESTÁTICO == */
 
 section {
 	margin: 50px var(--main-content-width);
@@ -62,17 +64,13 @@ section {
 }
 h1 {
 	color:#303030;
-	/* font-size: 32px; */
-}
-p {
-	/* font-size: 12px; */
 }
 /* Estilo para un p con id "texto-4" */
 p#texto-4 {
 	background-color: #000000;
 	color: green;
 	margin-left: 30px;
-	margin-right: 80%;
+	margin-right: 40%;
 }
 .contenedor-botones {
 	/* border: 2px solid blueviolet; */
