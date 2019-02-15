@@ -1,26 +1,67 @@
 body {
-    margin: 0;
+	margin: 0;
 }
 .main-container {
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    grid-template-rows: 80px
-                        1fr
-                        150px;
-    grid-template-areas: "header 	header"
-                         ". 		content"
-                         "footer 	footer";
+	display: grid;
+	grid-template-columns: 170px 1fr;
+	grid-template-rows: 80px
+						1fr
+						150px;
+	grid-template-areas: "header 	    header"
+						 "publicidad1    content"
+						 "footer        footer";
+	min-height: 100vh;
+	/* min-width: 100vw; */
 }
 
 .header {
-    grid-area: header;
-    background: red;
+	grid-area: header;
+	background: #e07676;
+}
+.publicidad1 {
+	grid-area: publicidad1;
+	background: #3cff00;
+	max-height: inherit;
+}
+.publicidad2 {
+	display: none;
 }
 .content {
-    grid-area: content;
-    background: blue;
+	grid-area: content;
+	background: blue;
+}
+.content h1, .content p {
+	margin: 10px 20px;
 }
 .footer {
-    grid-area: footer;
-    background: brown;
+	grid-area: footer;
+	color: white;
+	background: gray;
+}
+
+@media screen and (max-width: 768px) {
+
+	.main-container {
+		/* display: grid; */
+		grid-template-columns: 1fr;
+		grid-template-rows: 240px
+							80px
+							1fr
+							80px
+							150px;
+		grid-template-areas: "header"
+							 "publicidad1"
+							 "content"
+							 "publicidad2"
+							 "footer";
+		min-height: 100vh;
+	}
+
+	.publicidad2 {
+		color: red;
+		display: block;
+		grid-area: publicidad2;
+		background: #ffd000;
+		text-decoration: underline;
+	}
 }
