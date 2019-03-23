@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./posiciones.full.css">
+	<link rel="stylesheet" href="./tema.css">
+	<title>[FULL] Posición y despliegue</title>
+</head>
+<body>
+	<main>
+		<h1>Posiciones y despliegues de elementos</h1>
+		<article>
+			<h1>Las posiciones disponibles</h1>
+			<ul>
+				<li>static</li>
+				<li>relative</li>
+				<li>absolute</li>
+				<li>fixed</li>
+				<li>sticky</li>
+			</ul>
+		</article>
+
+		<article>
+			<h1>Static. Posición por default</h1>
+			<p>Cajas con posición estática y display block</p>
+			<div class="contenedor-cajas">
+				<div class="caja naranja"></div>
+				<div class="caja azul"></div>
+			</div>
+			<p>display inline-block</p>
+			<div class="contenedor-cajas">
+				<div class="caja inline-block naranja"></div>
+				<div class="caja inline-block azul"></div>
+			</div>
+		</article>
+		
+		<article>
+			<h1>Posición relativa</h1>
+			<p>Cajas con posición relativa, deja ocupada su antigua posición y se puede acomodar <b>visualmente</b> en cualquier parte.</p>
+			<div class="contenedor-cajas">
+				<div class="caja naranja"></div>
+				<div class="caja relativa azul"></div>
+			</div>
+			<span>Soy un span</span>
+		</article>
+
+		<article>
+			<h1>Posición absoluta</h1>
+			<p>Cajas con posición absoluta, ocupa la misma posición de su elemento padre con posición relativa. Si no encuentra un padre con posición relativa, se posiciona relativamente con <code>< html ></code> 
+				<br>También se puede acomodar en cualquier parte.</p>
+			<div class="contenedor-cajas">
+				<div class="caja"></div>
+				<div class="caja absoluta1 naranja"></div>
+				<div class="caja absoluta2 azul"></div>
+				<div class="caja absoluta1-right azul"></div>
+				<div class="caja absoluta2-right naranja"></div>
+			</div>
+			
+		</article>
+
+		<article class="fixed">
+			<h1>Posición fixed</h1>
+			<p>Este artículo está ajustado al elemento <code>< html ></code> y no es afectado por el scroll.
+				<br>También se puede acomodar en cualquier parte.</p>
+			<code>
+				.class {
+					position: fixed;
+				}
+			</code>
+			
+		</article>
+		
+		
+		<div class="super-enter">
+			<article class="sticky">
+				<h1>Posición sticky</h1>
+				<p>La posición sticky ajusta este elemento a un padre con posición relativa y dejará de ser afectado por el scroll cuando esté dentro de su elemento padre. 
+					<br>Las coordenadas se ajustan con respecto al elemento <code>< html ></html></code></p>
+				<code>
+					.class { position: sticky; }
+				</code>
+				<!-- <div class="caja azul"></div> -->
+			</article>
+
+		</div>
+		<br><br>
+		<br><br>
+		<br><br>
+		<hr>
+		<br><br>
+		<br><br>
+		<br><br>
+		<hr>
+		<br><br>
+		<br><br>
+		<br><br>
+		<hr>
+		<br><br>
+		<br><br>
+		<br><br>
+		<hr>
+		<br><br>
+		<br><br>
+		<br><br>
+		<hr>
+	</main>
+</body>
+</html>

@@ -11,26 +11,75 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Estilos CSS</title>
 	<!-- Aquí incluimos nuestros códigos css -->
+	<link rel="stylesheet" href="css/estilos.css">
+	<style>
+		h1 {
+			color: #d87093;
+			font-family: "Comic sans MS";
+			margin: 0;
+		}
+		#tres {
+			font-weight: bold;
+		}
+		.uno {
+			text-decoration: underline;
+			font-style: italic;
+		}
+	</style>
 </head>
 <body>
 	
 	<section>
-		<h1>CSS: sintaxis y formas de agregar estilos</h1>
+		<div id="main">
 
-		<p>
-			lorem
-		</p>
+				<h1>CSS: sintaxis y formas de agregar estilos</h1>
 
-		<p>El texto 1</p>
-		<p>El texto 2</p>
-		<p>El texto 3</p>
-		<p>El texto 4</p>
-		<p>El texto 5</p>
+				<p align="left">
+					Texto alineado a la izquierda
+				</p>
+				<p align="center">
+					Texto alineado al centro
+				</p>
+				<p align="right">
+					Texto alineado a la derecha
+				</p>
+		
+				<p class="uno">El texto 1</p>
+				<p class="uno">El texto 2</p>
+				<p id="tres">El texto 3</p>
+				<p style="margin-left: 2px;">El texto 4</p>
+				<p class="texto">El texto 5</p>
+				<span class="texto">soy un span</span>
+				<span class="texto">soy otro span</span>
 
-		<div class="contenedor-cajas">
-			<div class="caja"></div>
+				<ol>
+					<li>Item ol 1</li>
+					<li>Item ol 2</li>
+					<li>Item ol 3</li>
+				</ol>
+				<ul class="">
+					<li>Item ul 1</li>
+					<li>Item ul 2</li>
+					<li>Item ul 3</li>
+				</ul>
+
+				<div class="contenedor-botones">
+					<div class="left">
+						<button class="boton">Ayuda</button>
+					</div>
+					<div align="right">
+						<button class="boton rojo">Cancelar</button>
+						<button class="boton verde">Aceptar</button>
+					</div>
+				</div>
+
+				<div class="contenedor-cajas">
+					<div class="caja">Soy la cajita 1</div>
+					<div class="caja mouse-encima">Soy la cajita 2</div>
+					<div class="caja azul">Soy la cajita 3</div>
+				</div>
+			</section>
+
 		</div>
-	</section>
-	
 </body>
 </html>

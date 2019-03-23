@@ -1,66 +1,73 @@
 <style>
-    body {
-  margin: 0;
+body {
+	margin: 0;
 }
-    section.main-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "header header"
-                        "content1 content1"
-                        "content2 content3"
-                        "footer footer";
-    justify-content: center;
-    align-content: center;
-    min-height: 100vh;
-    }
-    div {
-    border: solid 1px red;
-    font-size: 30px;
-    font-family: Arial;
-    }
-    .center {
-    margin: auto;
-    min-width: 100%;
-    min-height: 100%;
-    border: 1px solid #73AD21;
-    }
-    span {
-    margin: auto auto;
-    }
-    .header {
-    background: #234234;
-    grid-area: header;
-    }
-    .content1 {
-    grid-area: content1;
-    }
-    .content2 {
-    grid-area: content2;
-    }
-    .content3 {
-    grid-area: content3;
-    }
-    .footer {
-    grid-area: footer;
-    }
+section.main-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	grid-template-areas: "header header"
+						"content1 content1"
+						"content2 content3"
+						"footer footer";
+	justify-content: center;
+	align-content: center;
+	min-height: 100vh;
+}
+div {
+	border: solid 1px red;
+	font-size: 30px;
+	font-family: Arial;
+}
+.hey {
+	margin: 75px 50;
+}
+span {
+	margin: auto auto;
+}
+.header {
+	background: #234234;
+	grid-area: header;
+}
+.content1 {
+	grid-area: content1;
+}
+.content2 {
+	grid-area: content2;
+}
+.content3 {
+	grid-area: content3;
+}
+.footer {
+	grid-area: footer;
+}
 </style>
 
 <section class="main-container">
-    <div class="header">
-        <span class="center">Desarrollador Web Full-stack</span>
-    </div>
+	<div class="header">
+		<div class="hey">
+			<span>Desarrollador Web Full-stack</span>
+		</div>
+	</div>
 
-    <div class="content1">
-        <span class="center">Crea sitios modernos responsivos</span>
-    </div>
-    <div class="content2">
-        <span class="center">Con HTML y CSS</span>
-    </div>
-    <div class="content3">
-        <span class="center">Es fácil y práctico ;)</span>
-    </div>
-    <div class="footer">
-        <span class="center">Módulo 1. Arquitectura y diseño web</span>
-    </div>
+	<div class="content1">
+		<div class="hey">
+			<span>Crea sitios modernos responsivos</span>
+		</div>
+	</div>
+	<div class="content2">
+		<div class="hey">
+			<span>Con HTML y CSS</span>
+		</div>
+	</div>
+	<div class="content3">
+		<div class="hey">
+			<span>Es fácil y práctico ;) (ni me sale)</span>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="hey">
+			<span>Módulo 1. Arquitectura y diseño web</span>
+		</div>
+	</div>
 </section>

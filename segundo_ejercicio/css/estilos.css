@@ -1,3 +1,78 @@
 body {
 	margin: 0;
 }
+p {
+	font-size: 1em;
+}
+section {
+	background: #d6d6d6;
+	margin: 0px 50px;
+}
+#main {
+	margin: 10px;
+}
+/* Selectores múltiples */
+p.texto, span.texto {
+	background-color: black;
+	color: white;
+}
+.contenedor-cajas {
+	padding: 8px;
+	background-color: gray;
+}
+.caja {
+	border: solid 1px red;
+	margin: 8px;
+
+	/* padding: 8px; */
+	padding: 45px 10px;
+	/* padding: 8px 8px 8px 32px; */
+	background-color: #d3b6b6;
+	font-size: 12px;
+	display: inline-block;
+}
+.mouse-encima {
+	font-size: 32px;
+	transition: ease .5s;
+}
+/* Selector de eventos */
+.mouse-encima:hover {
+	background: green;
+}
+.azul {
+	background: #9494ff;
+	display: none;
+}
+
+
+/* Selectores anidados */
+ul li {
+	text-decoration: underline;
+}
+
+/* Botones */
+.contenedor-botones {
+	border: solid 1px blueviolet;
+	margin: 12px 0;
+	background: white;
+}
+.boton {
+	background: #333;
+	border: none;
+	border-radius: 7px;
+	cursor: pointer;
+	margin: 12px;
+	color: white;
+	font-weight: bold;
+	padding: 6px 12px;
+	min-width: 100px;
+}
+.rojo {
+	background: #f17171;
+}
+.verde {
+	background: #75ff75;
+}
+.left {
+	position: absolute;
+}

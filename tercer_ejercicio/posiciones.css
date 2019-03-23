@@ -1,0 +1,23 @@
+.contenedor-cajas {
+	position: relative;
+}
+.caja {
+	display: block;
+	height: 100px;
+	width: 100px;
+}
+.block {
+	display: inline-block;
+}
+.naranja {
+	background: orange;
+}
+.azul {
+	position: static;
+	background: lightskyblue;
+}
+
+.super-enter {
+	min-height: 450px;
+	border: solid 1px red ;
+}
