@@ -5,10 +5,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="./posiciones.css">
-	<!-- <link rel="stylesheet" href="./tema.css"> -->
+	<link rel="stylesheet" href="./tema.css">
 	<title>Posición y despliegue</title>
 </head>
 <body>
+
+	<header>
+		<nav>
+			<img class="menu-logo" src="vergeta.png" alt="Vergeta :D">
+			<ul class="menu">
+				<li>
+					<a href="#default">Default</a>
+				</li>
+				<li>
+					<a href="#relativa">Relativa</a>
+				</li>
+				<li>
+					<a href="#absoluta">Absoluta</a>
+				</li>
+				<li>
+					<a href="#sticky">Sticky</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
 	<main>
 		<h1>Posiciones y despliegues de elementos</h1>
 		<article>
@@ -22,7 +43,7 @@
 			</ul>
 		</article>
 
-		<article>
+		<article id="default">
 			<h1>Static. Posición por default</h1>
 			<p>Cajas con posición estática y display block</p>
 			<div class="contenedor-cajas">
@@ -31,13 +52,37 @@
 			</div>
 			<p>display inline-block</p>
 			<div class="contenedor-cajas">
-				<div class="caja block naranja"></div>
-				<div class="caja block azul"></div>
+				<div class="caja inline-block naranja"></div>
+				<div class="caja inline-block azul"></div>
 			</div>
 		</article>
 
+		<article id="relativa">
+			<h1>Posición Relativa</h1>
+			<p>Descripción de posición relativa: Ocupa el mismo espacio, y se puede acomodar visualmente en otro lado. Sus coordenadas se ajustan con respecto a su posición original.</p>
+			<div class="contenedor-cajas">
+				<div class="caja azul"></div>
+				<div class="caja relative naranja"></div>
+			</div>
+		</article>
+
+		<article id="absoluta">
+			<h1>Posición absoluta</h1>
+			<p>Igual que posición relativa, solamente que pasa a ocupar el mismo espacio que su papá relativo, o < html > si no encuentra uno.
+				<br>También se puede acomodar visualmente en donde queramos, a partir de su posición.</p>
+			<div class="contenedor-cajas">
+				<div class="caja azul"></div>	
+				<div class="caja absolute naranja"></div>
+			</div>
+		</article>
+
+		<article class="fixed">
+			<h1>Título</h1>
+			<p>Párrafo</p>
+		</article>
+
 		<div class="super-enter">
-			<article class="sticky">
+			<article id="sticky" class="sticky">
 				<h1>Posición sticky</h1>
 				<p>La posición sticky ajusta este elemento a un padre con posición relativa y dejará de ser afectado por el scroll cuando esté dentro de su elemento padre. 
 					<br>Las coordenadas se ajustan con respecto al elemento <code>< html ></html></code></p>
@@ -45,8 +90,11 @@
 					.class { position: sticky; }
 				</code>
 			</article>
-
 		</div>
+		<div class="contenedor-cajas">
+			<div class="caja centrado azul"></div>
+		</div>
+
 		<br><br>
 		<br><br>
 		<br><br>

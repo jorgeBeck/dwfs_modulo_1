@@ -7,9 +7,9 @@ body {
 	grid-template-rows: 80px
 						1fr
 						150px;
-	grid-template-areas: "header 	    header"
-						 "content1    content2"
-						 "footer        footer";
+	grid-template-areas:"header 	    header"
+						".    content2"
+						"footer        footer";
 	min-height: 100vh;
 	/* min-width: 100vw; */
 }
@@ -51,11 +51,11 @@ div {
 							1fr
 							80px
 							150px;
-		grid-template-areas: "header"
-							 "content1"
-							 "content2"
-							 "content3"
-							 "footer";
+		grid-template-areas:"header"
+							"content1"
+							"content2"
+							"content3"
+							"footer";
 		min-height: 100vh;
 	}
 

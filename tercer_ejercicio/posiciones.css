@@ -1,12 +1,48 @@
+header {
+	position: fixed;
+	z-index: 100;
+	margin: 0;
+	top: 0;
+	width: 100vw;
+	background-image: linear-gradient(#6d6d74, #303030);
+}
+header nav {
+	margin: 0 24px;
+	border: solid 1px red;
+}
+.menu {
+	float: right;
+	/* display: inline-block; */
+	padding: 0;
+}
+.menu-logo {
+	/* display: inline-block; */
+	width: 80px;
+}
+.menu li {
+	display: inline-block;
+}
+.menu li a {
+	color: white;
+}
+
+main {
+	margin-top: 103.333px;
+}
+
+
+/* Contenido */
 .contenedor-cajas {
 	position: relative;
+	border: solid 1px green;
+	/* width: 10em; */
 }
 .caja {
-	display: block;
+	/* display: inline-block; */
 	height: 100px;
 	width: 100px;
 }
-.block {
+.inline-block {
 	display: inline-block;
 }
 .naranja {
@@ -16,8 +52,51 @@
 	position: static;
 	background: lightskyblue;
 }
+.relative {
+	left: 100px;
+	bottom: 100p	x;
+	position: relative;
+}
+.absolute {
+	left: 10px;
+	top: 10px;
+	position: absolute;
+}
+.fixed {
+	right: 0;
+	top: 86px;
+	position: fixed;
+}
 
 .super-enter {
 	min-height: 450px;
 	border: solid 1px red ;
+}
+.sticky {
+	top: 103.333px;
+	/* top: 0; */
+	position: sticky;
+}
+
+.centrado {
+	display: inline-block;
+	position: relative; 
+	left: 50vw;
+	/* truco para centrar */
+	transform: translate(-50%);
+}
+
+@media screen and (max-width: 600px) {
+	.fixed {
+		position: static;
+		left: 0;
+		right: 0;
+		top: 0;
+	}
+	.naranja {
+		background: red;
+	}
+	.azul {
+		background: blue;
+	}
 }

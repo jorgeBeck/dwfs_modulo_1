@@ -1,0 +1,163 @@
+:root {
+	--main-header-height: 52px;
+	--main-background-color: #e6e6e6;
+	--main-border-color: #c4c4c4;
+}
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background: var(--main-background-color);
+}
+.post {
+	background: white;
+	margin-top: 60px;
+	width: 100%;
+	border: solid 1px var(--main-border-color);
+	border-radius: 3px;
+}
+.post-header {
+	position: relative;
+	padding: 16px;
+}
+.post-header img {
+	width: 50px;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+}
+.post-header span {
+	position: absolute;
+	font-weight: bold;
+	margin-left: 70px;
+}
+.post-image img {
+	width: 100%;
+}
+.post-comments h4 {
+	margin: 0;
+}
+.post-comments span {
+	color: gray;
+	font-size: 0.70em;
+}
+.post-add-comment {
+	border-top: 1px solid var(--main-border-color);
+	padding: 24px 12px;
+}
+.post-add-comment input {
+	min-width: 100%;
+	border: 0;
+}
+.post-margin {
+	margin: 12px;
+}
+.main {
+	display: grid;
+	grid-template-columns: 110px 1fr 300px 110px;
+	grid-template-rows: var(--main-header-height)
+						1fr
+						150px;
+	grid-template-areas:"header	header	header	header"
+						".	content	sticky	."
+						"footer	footer	footer	footer";
+	min-height: 100vh;
+}
+.header {
+	grid-area: header;
+	z-index: 100;
+}
+.header-margin {
+	top: 0;
+	position: fixed;
+	background: white;
+	border-bottom: solid 1px var(--main-border-color);
+	min-width: 100vw;
+	min-height: var(--main-header-height);
+}
+.header-content {
+	margin: 12px 110px;
+}
+.header-left {
+	position: absolute;
+	cursor: pointer;
+}
+.header-center {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.search-box {
+	padding: 6px;
+	background: var(--main-background-color);
+	border: solid 1px var(--main-border-color);
+	border-radius: 3px;
+	width: 250px;
+}
+.header-right {
+	font-size: 22px;
+	text-align: right;
+}
+.header-right i {
+	margin-left: 16px;
+	cursor: pointer;
+}
+.text i {
+	margin-right: 12px;
+	font-size: 22px;
+}
+
+.content {
+	grid-area: content;
+}
+.side-content {
+	grid-area: sticky;
+	padding-left: 24px;
+}
+.side-content .solito {
+	top: 112px;
+	position: sticky;
+}
+.profile {
+	position: relative;
+	padding: 16px;
+}
+.profile img {
+	width: 50px;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+}
+.profile span {
+	position: absolute;
+	font-weight: bold;
+	margin-left: 70px;
+}
+.stories {
+	background: white;
+	margin-top: 50px;
+	width: 100%;
+	border: solid 1px var(--main-border-color);
+	border-radius: 3px;
+}
+.stories .header {
+	color: gray;
+}
+.stories .scroll {
+	overflow-y: scroll;
+	max-height: 250px;
+}
+.scroll .profile {
+	margin: 24px 0;
+}
+.scroll .profile img {
+	width: 40px;
+	padding: 2px;
+	border: solid 2px #f09fad;
+}
+.footer {
+	grid-area: footer;
+}
+
+.white {
+	color: white;
+}

@@ -63,7 +63,13 @@
 	.fixed {
 		position: static;
 		left: 0;
-		right: auto;
+		right: 0;
 		top: 0;
+	}
+	.naranja {
+		background: red;
+	}
+	.azul {
+		background: blue;
 	}
 }
